@@ -1,0 +1,50 @@
+---
+import ai from '../assets/ai.png';
+import autofill from '../assets/Omni-Auto.mp4';
+import uiIcon from '../assets/ui-two.svg?raw';
+import snap from '../assets/snap.png';
+import checkIcon from '../assets/check.svg?raw';
+import lockIcon from '../assets/lock.svg?raw';
+import { Image } from 'astro:assets';
+import { addIssueToContext } from 'astro:schema';
+---
+
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">✨ Key Features ✨</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <Image class="w-5/5 h-5/8" src={ai} alt="AI illustration" />
+        <h3 class="text-xl font-semibold mb-4">📚 Multi-Platform Search</h3>
+        <p class="text-gray-600">Search across Google, ChatGPT, Perplexity, and Claude simultaneously.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <video  src={autofill} class="w-5/6 h-3/5 object-contain mx-auto" 
+          autoplay  muted loop playsinline  style="pointer-events: none;"
+        />
+        <h3 class="text-xl font-semibold mb-4">⚡ Smart Autocomplete</h3>
+        <p class="text-gray-600">Leverage Google's autocomplete for efficient searching.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <Image class="w-4/5 h-5/8 border-slate-200 border-2" src={snap} alt="AI illustration" />
+        <h3 class="text-xl font-semibold mb-4">🖼️ Customizable Layouts</h3>
+        <p class="text-gray-600">Choose between tabbed or snapped layouts for optimal viewing.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <!-- <svg class="w-4/5 h-3/5" preserveAspectRatio="xMidYMid meet" set:html={savingsIcon}  /> -->
+        <h3 class="text-xl font-semibold mb-4">💡 Resource Efficient</h3>
+        <p class="text-gray-600">Lightweight design that only loads what you need.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <!-- <svg class="w-4/5 h-3/5" preserveAspectRatio="xMidYMid meet" set:html={checkIcon}  /> -->
+        <h3 class="text-xl font-semibold mb-4">✅ Easy Toggle</h3>
+        <p class="text-gray-600">Quickly enable/disable features from the extensions bar.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm hover:shadow-md transition-shadow">
+        <!-- <svg class="w-4/5 h-3/5" preserveAspectRatio="xMidYMid meet" set:html={lockIcon}  /> -->
+        <h3 class="text-xl font-semibold mb-4">💰 Flexible Pricing</h3>
+        <p class="text-gray-600">Choose from free tier or affordable premium options.</p>
+      </div>
+    </div>
+  </div>
+</section>

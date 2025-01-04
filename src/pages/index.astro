@@ -1,22 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro'
-import Brief from '../components/Brief.astro'
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
 import Pricing from '../components/Pricing.astro';
-import Customers from '../components/Customers.astro'
-import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
 ---
 
-<Layout title="Idol | Micro SaaS landing page">
-	<Header />
-	<Hero />
-	<Brief />
-	<Pricing />
-	<Customers />
-	<Footer />
+<Layout>
+  <main class="space-y-20 py-10">
+    <Hero />
+    <Features />
+    <Pricing />
+    <CTA />
+  </main>
 </Layout>
-
-<style>
-
-</style>

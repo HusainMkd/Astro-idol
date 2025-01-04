@@ -1,106 +1,56 @@
 ---
-
 ---
 
-
-<section class="pricing-table" id="pricing">
-    <div class="container">
-        <div class="center text-container">
-            <h3 class="h1-title">Choose the right plan</h3>
-            <p>We have designed our pricing to help you find the best solutions for you and your incredible business</p>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12">💰 Pricing Plans 💰</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-8 border rounded-lg shadow-sm">
+        <div class="text-5xl mb-4 text-blue-600 mx-auto">💰</div>
+        <h3 class="text-xl font-semibold mb-4">Free Tier</h3>
+        <p class="text-4xl font-bold mb-4">$0</p>
+        <ul class="text-gray-600 space-y-2 mb-6">
+          <li>✅ 50 searches/month</li>
+          <li>✅ Basic features</li>
+          <li>✅ Community support</li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          Get Started 🚀
+        </button>
+      </div>
+      
+      <div class="p-8 border rounded-lg shadow-lg relative">
+        <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg">
+          ⭐ Most Popular
         </div>
-
-        <div class="row">
-            <div class="one-third column price-item">
-                <div class="price-header m-margin">
-                    <h5 class="l-subtitle">Starter</h5>
-                    <h3 class="h2-title">$9.99<span class="s-paragraph"> / month</span></h3>
-                    <a href="#" class="button u-full-width">start trial</a>
-                </div>
-
-                <div class="price-list">
-                    <p>Unlimited Feedback boards</p>
-                    <p>Unlimited Prioritization Table</p>
-                    <p>Single Sign-On (SSO)</p>
-                    <p>Brand Customization</p>
-                    <p>Unlimited Tracked Users</p>
-                    <p>Custom Domain</p>
-                    <p>Unlimited Prioritization Table</p>
-                </div>
-            </div>
-            <div class="one-third column price-item">
-                <div class="price-header m-margin">
-                    <h5 class="l-subtitle">Starter</h5>
-                    <h3 class="h2-title">$9.99<span class="s-paragraph"> / month</span></h3>
-                    <a href="#" class="button button-primary u-full-width">start trial</a>
-                </div>
-
-                <div class="price-list">
-                    <p>Unlimited Feedback boards</p>
-                    <p>Unlimited Prioritization Table</p>
-                    <p>Single Sign-On (SSO)</p>
-                    <p>Brand Customization</p>
-                    <p>Unlimited Tracked Users</p>
-                    <p>Custom Domain</p>
-                    <p>Unlimited Prioritization Table</p>
-                </div>
-            </div>
-            <div class="one-third column price-item">
-                <div class="price-header m-margin">
-                    <h5 class="l-subtitle">Starter</h5>
-                    <h3 class="h2-title">$9.99<span class="s-paragraph"> / month</span></h3>
-                    <a href="#" class="button u-full-width">start trial</a>
-                </div>
-
-                <div class="price-list">
-                    <p>Unlimited Feedback boards</p>
-                    <p>Unlimited Prioritization Table</p>
-                    <p>Single Sign-On (SSO)</p>
-                    <p>Brand Customization</p>
-                    <p>Unlimited Tracked Users</p>
-                    <p>Custom Domain</p>
-                    <p>Unlimited Prioritization Table</p>
-                </div>
-            </div>
-        </div>
+        <div class="text-5xl mb-4 text-blue-600 mx-auto">💳</div>
+        <h3 class="text-xl font-semibold mb-4">Pro Plan</h3>
+        <p class="text-4xl font-bold mb-4">$5<span class="text-xl text-gray-500">/month</span></p>
+        <ul class="text-gray-600 space-y-2 mb-6">
+          <li>✅ 500 searches/month</li>
+          <li>✅ All features</li>
+          <li>✅ Priority support</li>
+          <li>✅ Custom layouts</li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          Upgrade Now ⚡
+        </button>
+      </div>
+      
+      <div class="p-8 border rounded-lg shadow-sm">
+        <div class="text-5xl mb-4 text-blue-600 mx-auto">⭐️</div>
+        <h3 class="text-xl font-semibold mb-4">Lifetime</h3>
+        <p class="text-4xl font-bold mb-4">$90</p>
+        <ul class="text-gray-600 space-y-2 mb-6">
+          <li>✅ Unlimited searches</li>
+          <li>✅ All features</li>
+          <li>✅ Priority support</li>
+          <li>✅ Early access to new features</li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          Get Lifetime Access 🎉
+        </button>
+      </div>
     </div>
- </section>
-
-
- <style lang="scss">
-
-.pricing-table{
-   background-color: #fff;
-  .price-item{
-    border: 1px solid #dde2e5;
-    padding: 30px;
-    margin-top: 20px;
-    border-radius: 20px;
-    .price-header{
-      h3 .s-paragraph{
-        color: #9ba5b9;
-      }
-    }
-    .price-list{
-      p{
-        margin: 10px 0;
-        position: relative;
-        padding-left: 20px;
-        &::before{
-          position: absolute;
-          content: '';
-          left: 0; top: 5px;
-          display: inline-block;
-          transform: rotate(45deg);
-          height: 8px;
-          width: 5px;
-          border-bottom: 2px solid #9ba5b9;
-          border-right: 2px solid #9ba5b9;
-          z-index: 5;
-        }
-      }
-    }
-    
-  }
-}
- </style>
+  </div>
+</section>

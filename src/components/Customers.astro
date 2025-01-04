@@ -1,5 +1,7 @@
 ---
 import Stars from '../assets/stars.svg'
+import { Image } from 'astro:assets';
+
 ---
 
 <section class="product-reviews" id="customers">
@@ -12,7 +14,7 @@ import Stars from '../assets/stars.svg'
 
             <div class="customer-reviews m-margin">
                 <div class="flex center">
-                    <img src={Stars}>
+                    </Image src={Stars}>
                     <span class="s-paragraph">Base on 87,00+ reviews</span>
                 </div>
                 <small><strong>1 millon</strong> customers and counting</small>
@@ -26,30 +28,30 @@ import Stars from '../assets/stars.svg'
         <div class="customer-avatars">
            <div class="left-side-avatars">
               <div class="circular-image">
-                <img src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=800">
+                </Image src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=800">
                </div>
                <div class="circular-image">
-                 <img src="https://images.pexels.com/photos/1493111/pexels-photo-1493111.jpeg?auto=compress&cs=tinysrgb&w=800">
+                 </Image src="https://images.pexels.com/photos/1493111/pexels-photo-1493111.jpeg?auto=compress&cs=tinysrgb&w=800">
                </div>
                <div class="circular-image">
-                 <img src="https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=800">
+                 </Image src="https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=800">
                </div>
                <div class="circular-image">
-                   <img src="https://images.pexels.com/photos/3058391/pexels-photo-3058391.jpeg?auto=compress&cs=tinysrgb&w=800">
+                   </Image src="https://images.pexels.com/photos/3058391/pexels-photo-3058391.jpeg?auto=compress&cs=tinysrgb&w=800">
                </div>
            </div>
            <div class="right-side-avatars">
             <div class="circular-image">
-              <img src="https://images.pexels.com/photos/12599059/pexels-photo-12599059.jpeg?auto=compress&cs=tinysrgb&w=800">
+              </Image src="https://images.pexels.com/photos/12599059/pexels-photo-12599059.jpeg?auto=compress&cs=tinysrgb&w=800">
              </div>
              <div class="circular-image">
-               <img src="https://images.pexels.com/photos/3394657/pexels-photo-3394657.jpeg?auto=compress&cs=tinysrgb&w=800">
+               </Image src="https://images.pexels.com/photos/3394657/pexels-photo-3394657.jpeg?auto=compress&cs=tinysrgb&w=800">
              </div>
              <div class="circular-image">
-               <img src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=800">
+               </Image src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=800">
              </div>
              <div class="circular-image">
-                 <img src="https://images.pexels.com/photos/3756985/pexels-photo-3756985.jpeg?auto=compress&cs=tinysrgb&w=800">
+                 </Image src="https://images.pexels.com/photos/3756985/pexels-photo-3756985.jpeg?auto=compress&cs=tinysrgb&w=800">
              </div>
           </div>
         </div>
@@ -63,7 +65,7 @@ import Stars from '../assets/stars.svg'
     padding: 80px 0;
     background-color: #fff;
     .customer-reviews{
-      img{
+      Image{
         width: 80px;
       }
       span{
@@ -90,7 +92,7 @@ import Stars from '../assets/stars.svg'
         overflow: hidden;
         display: inline-block;
         vertical-align: middle;
-        img{
+        Image {
           width: 100%;
         }
       }
@@ -130,7 +132,7 @@ import Stars from '../assets/stars.svg'
     }
 
     @media (max-width:700px) {
-      .circular-image img{
+      .circular-image Image{
         display: none;
       }
     }

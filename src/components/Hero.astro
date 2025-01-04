@@ -1,91 +1,32 @@
 ---
-import Bomb from '../assets/bomb.svg'
-import Mailbox from '../assets/mailbox.svg'
-import Folder from '../assets/folder.svg'
-import Savings from '../assets/savings.svg'
-import Gift from '../assets/gift.svg'
+import cgpt from '../assets/cgpt.png';
+import claude from '../assets/claude.png';
+import pplx from '../assets/pplx.png';
+import goog from '../assets/goog.png';
+import { Image } from 'astro:assets';
 ---
 
-
-<section class="product-hero">
-    <div class="container">
-        <div class="d-table">
-            <div class="d-table-cell center">
-                <div class="hero-copy">
-                    <h1 class="h1-title">Automate your design process for creative freedom</h1>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi dignissimos exercitationem nesciunt, quo quibusdam assums? Architecto, placeat libero. </p>
-                    <div class="product-cta">
-                      <a href="#" class="button button-primary u-full-width">Start Trial — It's Free</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-media">
-            <img src={Bomb} alt="Dynamite">
-            <img src={Mailbox} alt="Mailbox">
-            <img src={Folder} alt="Folder">
-            <img src={Savings} alt="Money">
-            <img src={Gift} alt="Gift">
+<section class="text-center py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center">
+      <h1 class="text-5xl font-bold mb-6">
+        🔍 Search 4x with Omni AI 🚀
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Get results from multiple AI platforms in one click. 
+        <br> Compare Google, ChatGPT, Perplexity, and Claude simultaneously.
+      </p>
+      <div class="flex gap-4 justify-center mb-12">
+        <button class="btn-primary">
+          Get Started FREE✨
+        </button>
+      </div>
+        <div class="flex justify-center space-x-14">
+            <Image src={goog} alt="UI Illustration" class="w-20 " />
+            <Image src={cgpt} alt="UI Illustration" class="w-20 " />
+            <Image src={claude} alt="UI Illustration" class="w-20 " />
+            <Image src={pplx} alt="UI Illustration" class="w-20 " />
         </div>
     </div>
- </section>
-
- <style lang="scss">
-
-
-.product-hero{
-  padding: 50px 0;
-  .container{
-    position: relative;
-    .d-table{
-      height: 500px;
-     }
-  }
-  .hero-media{
-    padding: 5px;
-    border-radius: 48px;
-  }
-  .hero-copy{
-    h1, p{
-      max-width: 600px;
-      margin: 20px auto;
-    }
-  }
-  .hero-media{
-    img{
-      position: absolute;
-      width: 160px;
-      &:nth-child(1){
-        top: 0;
-        left: -100px;
-      }
-      &:nth-child(2){
-        top: 0;
-        right: -100px;
-      }
-      &:nth-child(3){
-        top: 250px;
-        left: 0;
-      }
-      &:nth-child(4){
-        top: 250px;
-        right: 0;
-      }
-      &:nth-child(5){
-        bottom: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-    @media (max-width:700px) {
-      img{
-        &:nth-child(2), &:nth-child(3),
-        &:nth-child(4){
-          display: none;
-        }
-      }
-    }
-  }
-}
-
- </style>
+  </div>
+</section>
